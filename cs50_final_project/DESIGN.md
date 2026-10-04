@@ -66,7 +66,7 @@ The purpose of this database is to capture relationships that the FastF1 API doe
 
 
 ### Relationships
-![Entity Relationship Diagram](../images/diagram.png)
+![Entity Relationship Diagram](images/diagram.png)
 
 The ER diagram shows the relationships between the entities in the database. A driver can have multiple entries across seasons, while each entry belongs to one driver and one team. An event belongs to one circuit and can contain multiple sessions. Each session can have multiple results, laps, and weather records. Each result and lap belongs to a specific entry and session. The stints view derives stint information from laps. The ER diagram shows the relationships between the entities in the database. A driver can have multiple entries across seasons, while each entry belongs to one driver and one team. An event belongs to one circuit and can contain multiple sessions. Each session can have multiple results, laps, and weather records. Each result and lap belongs to a specific entry and session. The stints view derives stint information from laps.
 
