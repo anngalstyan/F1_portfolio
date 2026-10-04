@@ -1,8 +1,4 @@
-# Design Document
-
-By GALSTYAN ANNA
-
-Video overview: <URL HERE>
+# Formula 1 Race Data Analysis Database
 
 ## Scope
 
