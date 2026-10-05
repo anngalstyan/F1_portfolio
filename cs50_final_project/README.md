@@ -6,7 +6,7 @@
 
 The purpose of this database is to capture relationships that the FastF1 API doesn't model explicitly, such as which team a driver raced for in a given season (drivers do change teams between, and even within, seasons), and to streamline the filtering and joining otherwise required to answer a question like comparing tyre degradation across circuits.
 
-### Which people, places, things, etc. are you including in the scope of the database?
+### Which people, places, things, etc. are included in the scope of the database?
 
 - **Sessions**: season, event, circuit, session type (race, qualifying, sprint, sprint qualifying)
 - **Results**: driver, team, grid position, finishing position, points, status
