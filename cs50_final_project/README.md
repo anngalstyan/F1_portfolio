@@ -2,18 +2,18 @@
 
 ## Scope
 
-### What is the purpose of your database?
+### What is the purpose of the database?
 
 The purpose of this database is to capture relationships that the FastF1 API doesn't model explicitly, such as which team a driver raced for in a given season (drivers do change teams between, and even within, seasons), and to streamline the filtering and joining otherwise required to answer a question like comparing tyre degradation across circuits.
 
-### Which people, places, things, etc. are you including in the scope of your database?
+### Which people, places, things, etc. are you including in the scope of the database?
 
 - **Sessions**: season, event, circuit, session type (race, qualifying, sprint, sprint qualifying)
 - **Results**: driver, team, grid position, finishing position, points, status
 - **Laps**: lap number, lap time, sector times, compound, tyre age, stint number, pit in/out, track status, position, deleted lap / deleted lap reason
 - **Weather**: air temperature, track temperature, rainfall, wind speed, wind direction, sampled per session
 
-### Which people, places, things, etc. are outside of the scope of your database?
+### Which people, places, things, etc. are outside of the scope of the database?
 
 - **Car telemetry** (speed, throttle, brake, GPS) — not needed for the target queries.
 - **Race control messages** — the raw message log and its text content are out of scope; only the structured flags FastF1 derives from it (lap deletions and corrected stint data) are included.
@@ -21,7 +21,7 @@ The purpose of this database is to capture relationships that the FastF1 API doe
 
 ## Functional Requirements
 
-### What should a user be able to do with your database?
+### What should a user be able to do with the database?
 
 **SELECT**
 - Tyre degradation: How does tyre age affect a driver's lap time, and does this differ between tyre compounds?
@@ -41,7 +41,7 @@ The purpose of this database is to capture relationships that the FastF1 API doe
 **DELETE**
 - Remove duplicate lap rows for a session that was accidentally loaded twice.
 
-### What's beyond the scope of what a user should be able to do with your database?
+### What's beyond the scope of what a user should be able to do with the database?
 
 - Analyze car telemetry such as speed, throttle, or braking, since that data isn't stored.
 - Predict race outcomes or recommend strategies; the database supports the pace and degradation analysis a predictive model would use as input, but does not model or forecast anything itself.
